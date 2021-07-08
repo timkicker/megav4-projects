@@ -1,5 +1,5 @@
 # megav4-projects
-A collections of programs to run on the MEGACARDv4
+A collection of programs to run on the MEGACARDv4
 
 Various documentations and other files regarding this card can be found [here]:https://github.com/botchGNU/megav4-projects/tree/main/megav4documentation
 
