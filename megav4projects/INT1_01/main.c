@@ -2,7 +2,7 @@
  * INT1_01.c
  *
  * Created: 14.1.2021
- * Author: Harry
+ * Author: botch
  *
  * Funktion: Externer Interrupt 1 durch dr?cken von Taster Sx (x=0,1,2,3) ausgel?st
  *           interruptgesteuerte Abarbeitung

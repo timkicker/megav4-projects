@@ -2,7 +2,7 @@
  * PWM_01.c
  *
  * Created: 28.1.2021
- * Author: Harry
+ * Author: botch
  *
  * Funktion: botcher Mode: phasenrichtige PWM (nicht invertiert) auf OC0-Pin
  *           Signalausgabe ?ber Pin PB3(OC0)

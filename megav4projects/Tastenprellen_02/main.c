@@ -2,7 +2,7 @@
  * Tasterprellen_02.c
  *
  * Created: 27.9.2017
- * Author: Harry
+ * Author: botch
  * Hardware: MEGACARD
  * Zweck: Detektion von Tasterereignissen
  *        MIT softwarem??iger Tasterentprellung; Standardvariante

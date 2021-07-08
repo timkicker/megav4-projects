@@ -1,7 +1,7 @@
 /*
  * Bitoperationen.c
- * Created: 26.9.2017
- * Author: Harry
+ * Created: 26.9.2021
+ * Author: botch
  * Hardware: - Simulator
  * Zweck: Verwendung des Simulators zur Programmanalyse
  * Einstellungen: Unter Project->Properties - Opbotchization "None (-O0)"

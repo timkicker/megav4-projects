@@ -2,7 +2,7 @@
  * LED_01.c
  *
  * Created: 29.11.2018
- * Author : Harry
+ * Author : botch
  * Hardware: MEGACARD
  * Einstellungen: Jumper X9 schlie?en
  * Funktion: Die LEDs sollen im Rhythmus von 200ms umgeschaltet werden

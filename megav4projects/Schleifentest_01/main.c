@@ -2,7 +2,7 @@
  * Schleifentest_01.c
  *
  * Created: 28.9.2017
- * Author: Harry
+ * Author: botch
  * Hardware: MEGACARD
  * Zweck: Test der Z?hlschleife
  */ 

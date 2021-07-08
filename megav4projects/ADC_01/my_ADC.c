@@ -1,5 +1,5 @@
 /* my_ADC.c
-* Created: 07.04.2019
+* Created: 07.04.2021
 * Benutzerbibliothek: ADC-Funktionen
 */
 #include <avr/io.h>

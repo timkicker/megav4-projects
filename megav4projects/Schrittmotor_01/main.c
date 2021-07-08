@@ -2,7 +2,7 @@
  * Schrittmotor_01.c
  *
  * Created: 24.03.2021 13:32:04
- * Author : User
+ * Author : botch
  */ 
 
 #include <avr/io.h>

@@ -2,7 +2,7 @@
  * Speicherklassen_01.c
  *
  * Created: 28.9.2017
- * Author: Harry
+ * Author: botch
  *
  * Zweck: Untersuchung von lokalen u. globalen Variablen sowie
  *        unterschiedlicher Speicherklassen mittels Simulator

@@ -2,7 +2,7 @@
  * INT1_01.c
  *
  * Created: 6.1.2021
- * Author: Harry
+ * Author: botch
  *
  * Funktion: Externer Interrupt 1 durch dr?cken von Taster Sx (x=0,1,2,3) ausgel?st
  *           Jedes Tasterdr?cken imkrementiert dual-code auf LEDs

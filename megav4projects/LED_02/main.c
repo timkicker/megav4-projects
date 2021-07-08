@@ -2,7 +2,7 @@
  * LED_02.c
  *
  * Created: 19.11.2020 07:51:40
- * Author : Harry
+ * Author : botch
  * Einstellungen: Jumper X9 schlie?en
  * Funktion: LEDs-Status soll alle 500ms um 1 erh?ht werden 
  */ 
