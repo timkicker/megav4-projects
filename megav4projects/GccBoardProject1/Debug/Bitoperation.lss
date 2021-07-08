@@ -1,0 +1,184 @@
+
+Bitoperation.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000000f4  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000004  00800060  000000f4  00000188  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000002  00800064  00800064  0000018c  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000018c  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000001bc  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000020  00000000  00000000  000001f8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   0000060a  00000000  00000000  00000218  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000555  00000000  00000000  00000822  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000387  00000000  00000000  00000d77  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000034  00000000  00000000  00001100  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00005c86  00000000  00000000  00001134  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000003b  00000000  00000000  00006dba  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000010  00000000  00000000  00006df5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_macro  00000087  00000000  00000000  00006e05  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	29 c0       	rjmp	.+82     	; 0x54 <__ctors_end>
+   2:	00 00       	nop
+   4:	42 c0       	rjmp	.+132    	; 0x8a <__bad_interrupt>
+   6:	00 00       	nop
+   8:	40 c0       	rjmp	.+128    	; 0x8a <__bad_interrupt>
+   a:	00 00       	nop
+   c:	3e c0       	rjmp	.+124    	; 0x8a <__bad_interrupt>
+   e:	00 00       	nop
+  10:	3c c0       	rjmp	.+120    	; 0x8a <__bad_interrupt>
+  12:	00 00       	nop
+  14:	3a c0       	rjmp	.+116    	; 0x8a <__bad_interrupt>
+  16:	00 00       	nop
+  18:	38 c0       	rjmp	.+112    	; 0x8a <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	36 c0       	rjmp	.+108    	; 0x8a <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	34 c0       	rjmp	.+104    	; 0x8a <__bad_interrupt>
+  22:	00 00       	nop
+  24:	32 c0       	rjmp	.+100    	; 0x8a <__bad_interrupt>
+  26:	00 00       	nop
+  28:	30 c0       	rjmp	.+96     	; 0x8a <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	2e c0       	rjmp	.+92     	; 0x8a <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	2c c0       	rjmp	.+88     	; 0x8a <__bad_interrupt>
+  32:	00 00       	nop
+  34:	2a c0       	rjmp	.+84     	; 0x8a <__bad_interrupt>
+  36:	00 00       	nop
+  38:	28 c0       	rjmp	.+80     	; 0x8a <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	26 c0       	rjmp	.+76     	; 0x8a <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	24 c0       	rjmp	.+72     	; 0x8a <__bad_interrupt>
+  42:	00 00       	nop
+  44:	22 c0       	rjmp	.+68     	; 0x8a <__bad_interrupt>
+  46:	00 00       	nop
+  48:	20 c0       	rjmp	.+64     	; 0x8a <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	1e c0       	rjmp	.+60     	; 0x8a <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	1c c0       	rjmp	.+56     	; 0x8a <__bad_interrupt>
+	...
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d4 e0       	ldi	r29, 0x04	; 4
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+
+00000060 <__do_copy_data>:
+  60:	10 e0       	ldi	r17, 0x00	; 0
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+  66:	e4 ef       	ldi	r30, 0xF4	; 244
+  68:	f0 e0       	ldi	r31, 0x00	; 0
+  6a:	02 c0       	rjmp	.+4      	; 0x70 <__do_copy_data+0x10>
+  6c:	05 90       	lpm	r0, Z+
+  6e:	0d 92       	st	X+, r0
+  70:	a4 36       	cpi	r26, 0x64	; 100
+  72:	b1 07       	cpc	r27, r17
+  74:	d9 f7       	brne	.-10     	; 0x6c <__do_copy_data+0xc>
+
+00000076 <__do_clear_bss>:
+  76:	20 e0       	ldi	r18, 0x00	; 0
+  78:	a4 e6       	ldi	r26, 0x64	; 100
+  7a:	b0 e0       	ldi	r27, 0x00	; 0
+  7c:	01 c0       	rjmp	.+2      	; 0x80 <.do_clear_bss_start>
+
+0000007e <.do_clear_bss_loop>:
+  7e:	1d 92       	st	X+, r1
+
+00000080 <.do_clear_bss_start>:
+  80:	a6 36       	cpi	r26, 0x66	; 102
+  82:	b2 07       	cpc	r27, r18
+  84:	e1 f7       	brne	.-8      	; 0x7e <.do_clear_bss_loop>
+  86:	02 d0       	rcall	.+4      	; 0x8c <main>
+  88:	33 c0       	rjmp	.+102    	; 0xf0 <_exit>
+
+0000008a <__bad_interrupt>:
+  8a:	ba cf       	rjmp	.-140    	; 0x0 <__vectors>
+
+0000008c <main>:
+
+volatile unsigned char x,y; //globale Variablen; Speicherklasse "volatile"
+volatile signed char z=-10; //...(in SRAM angelegt ; Variablen vom Compiler nicht wegoptimierbar)
+volatile unsigned int neu =1000;
+                          
+int main(void) {
+  8c:	cf 93       	push	r28
+  8e:	df 93       	push	r29
+  90:	cd b7       	in	r28, 0x3d	; 61
+  92:	de b7       	in	r29, 0x3e	; 62
+    // Vorbelegung der Variablenwerte (Defaultwerte=0)
+	DDRA = 0xF0; //Datenrichtungs-Register für PortA (SFR)
+  94:	8a e3       	ldi	r24, 0x3A	; 58
+  96:	90 e0       	ldi	r25, 0x00	; 0
+  98:	20 ef       	ldi	r18, 0xF0	; 240
+  9a:	fc 01       	movw	r30, r24
+  9c:	20 83       	st	Z, r18
+	x=0xAB; //SRAM Speicherzelle //1010 1011    32 + 11 + 128 = 139 + 32 = 171
+  9e:	8b ea       	ldi	r24, 0xAB	; 171
+  a0:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <__data_end>
+	y=0x01; 
+  a4:	81 e0       	ldi	r24, 0x01	; 1
+  a6:	80 93 65 00 	sts	0x0065, r24	; 0x800065 <y>
+	
+	while(1) //Arbeitsschleife
+	{ 
+      DDRA ^= 0xff;   // 1-komplement (Alle Datenrichtungen von PortA umkehren)
+  aa:	8a e3       	ldi	r24, 0x3A	; 58
+  ac:	90 e0       	ldi	r25, 0x00	; 0
+  ae:	2a e3       	ldi	r18, 0x3A	; 58
+  b0:	30 e0       	ldi	r19, 0x00	; 0
+  b2:	f9 01       	movw	r30, r18
+  b4:	20 81       	ld	r18, Z
+  b6:	20 95       	com	r18
+  b8:	fc 01       	movw	r30, r24
+  ba:	20 83       	st	Z, r18
+	  x ^= 0xff;	  // 1-komplement (bitweises invertieren)
+  bc:	80 91 64 00 	lds	r24, 0x0064	; 0x800064 <__data_end>
+  c0:	80 95       	com	r24
+  c2:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <__data_end>
+	  y <<= 2;		  // 2 bit logisch nach links schieben
+  c6:	80 91 65 00 	lds	r24, 0x0065	; 0x800065 <y>
+  ca:	88 0f       	add	r24, r24
+  cc:	88 0f       	add	r24, r24
+  ce:	80 93 65 00 	sts	0x0065, r24	; 0x800065 <y>
+	  z >>= 1;        // 1 bit arithmetisch nach rechts schieben
+  d2:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+  d6:	85 95       	asr	r24
+  d8:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+	  neu += 2;
+  dc:	80 91 61 00 	lds	r24, 0x0061	; 0x800061 <neu>
+  e0:	90 91 62 00 	lds	r25, 0x0062	; 0x800062 <neu+0x1>
+  e4:	02 96       	adiw	r24, 0x02	; 2
+  e6:	90 93 62 00 	sts	0x0062, r25	; 0x800062 <neu+0x1>
+  ea:	80 93 61 00 	sts	0x0061, r24	; 0x800061 <neu>
+	} 
+  ee:	dd cf       	rjmp	.-70     	; 0xaa <main+0x1e>
+
+000000f0 <_exit>:
+  f0:	f8 94       	cli
+
+000000f2 <__stop_program>:
+  f2:	ff cf       	rjmp	.-2      	; 0xf2 <__stop_program>
