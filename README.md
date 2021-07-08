@@ -1,4 +1,4 @@
-# megav4-projects
+# MEGACARD v4 Projects
 A collection of my programs to run on the MEGACARDv4.
 
 Various documentations and other files regarding this device can be found [here](https://github.com/botchGNU/megav4-projects/tree/main/megav4documentation)
