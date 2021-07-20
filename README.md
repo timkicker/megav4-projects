@@ -5,4 +5,4 @@ Various documentations and other files regarding this device can be found [here]
 
 
 You are more than welcome to help translating the German comments to English.
-*Note: Work is still in progress, expect some projects not to work correctly*
+*Note: Work is still in progress, expect some projects to not work properly*
